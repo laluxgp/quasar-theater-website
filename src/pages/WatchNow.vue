@@ -58,7 +58,7 @@ export default {
           {
             type: 'application/x-mpegURL',
             src:
-              'https://videodelivery.net/80619fcb64f0f1ef8e6de9465c5d2d28/manifest/video.m3u8'
+              'https://videodelivery.net/d030fb826be3b9395b9c46bfcd3eabf8/manifest/video.m3u8'
           }
         ],
         hls: true,
@@ -86,21 +86,21 @@ export default {
     console.log('this is current player instance object', this.player)
     this.$refs.videoPlayer.player.controlBar.progressControl.disable()
     setTimeout(() => {
-      console.log('dynamic change options', this.player)
+      console.log('dynamic change options', this.playerOptions)
       // this.player.src(url);
       // change src
-      // this.playerOptions.sources[1].src = 'https://videodelivery.net/d877d4217c7a0683c35ac12fc5aa8d94/manifest/video.m3u8';
+      // this.playerOptions.sources[0].src = 'https://videodelivery.net/d030fb826be3b9395b9c46bfcd3eabf8/manifest/video.m3u8'
       // change item
       // this.$set(this.playerOptions.sources, 0, {
-      //   type: "video/mp4",
-      //   src: 'https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm',
+      //   type: "application/x-mpegURL",
+      //   src: 'https://videodelivery.net/d030fb826be3b9395b9c46bfcd3eabf8/manifest/video.m3u8',
       // })
       // change array
       // this.playerOptions.sources = [{
-      //   type: "video/mp4",
-      //   src: 'https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm',
+      //   type: 'application/x-mpegURL',
+      //   src: 'https://videodelivery.net/d030fb826be3b9395b9c46bfcd3eabf8/manifest/video.m3u8'
       // }]
-      this.player.muted(false)
+      // this.player.muted(false)
     }, 5000)
   },
   computed: {
