@@ -1,0 +1,10 @@
+{
+  "vetur.validation.template": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // "vetur.experimental.templateInterpolationService": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
